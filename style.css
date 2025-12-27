@@ -80,3 +80,37 @@ nav a:hover {
   align-items: center;
   justify-content: center;
 }
+.video-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background-color: rgb(96 165 250 / var(--tw-bg-opacity, 1));
+  text-align: center;
+  margin: 0;
+}
+
+.tablet-highlight-text{
+  font-size: larger;
+  font-weight: 600;
+  margin: 1rem;
+  background-color: #fff;
+  color: #3d57cb;
+}
+
+.tablet-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  background-color: #0d4168;
+}
+
+.tablet-section-img{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
