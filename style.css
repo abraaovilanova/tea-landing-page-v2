@@ -97,6 +97,8 @@ nav a:hover {
   margin: 1rem;
   background-color: #fff;
   color: #3d57cb;
+  padding: 1rem;
+  border-radius: 1rem;
 }
 
 .tablet-section{
@@ -113,4 +115,252 @@ nav a:hover {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.what-section-title{
+background-color: #184568;
+padding: 1rem;
+border-radius: 1rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.what-section-title{
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+
+.what-section-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.what-section-list > li {
+    position: relative;
+    padding: 16px 16px 16px 28px; /* espaço pro bullet */
+    color: white;
+    margin: 1rem;
+}
+
+/* .what-section-list > li{
+  position: relative;
+    padding: 16px;
+    margin-bottom: 16px;
+    color: white;
+    margin: 1rem;
+} */
+
+/* BULLET POINT */
+.what-section-list > li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 8px;
+    height: 8px;
+    background: white;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+/* BORDA COM FADE */
+.what-section-list > li::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100%;
+
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-left: none;
+
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 16px;
+
+    box-sizing: border-box;
+
+    -webkit-mask-image: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 1) 70%,
+        rgba(0, 0, 0, 0) 100%
+    );
+    mask-image: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 1) 70%,
+        rgba(0, 0, 0, 0) 100%
+    );
+}
+
+.phone-group{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.phone-group > div > p{
+font-size: 2rem;
+}
+
+.footer-text{
+  text-align: justify;
+  font-size: small;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 1rem;
+}
+.footer-text-title{
+  font-size: small;
+  font-weight: 800;
+  color: white;
+  margin-top: 1rem;
+}
+.footer-tea-logo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bonus-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  background-color: #4e4d9d;
+  padding: 2rem;
+}
+
+.bonus-section-img{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+.bonus-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between the two buttons */
+  width: 100%;
+  max-width: 600px;
+}
+
+.bonus-button {
+  /* Gradient: Orange -> Pink -> Purple */
+  background: linear-gradient(to right, #ff6a00, #ee0979, #9c27b0);
+  border-radius: 50px; /* High value creates the rounded pill shape */
+  padding: 20px 40px;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.bonus-button:hover {
+  transform: scale(1.02); /* Slight grow effect on hover */
+}
+
+.main-text {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.sub-text {
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin-top: 5px;
+  opacity: 0.9;
+}
+
+.bonus-container-all{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Container that holds both the buttons and the text side-by-side */
+.bonus-content-wrapper {
+  display: flex;
+  flex-direction: row; /* This aligns them side-by-side */
+  align-items: center; /* Vertically centers the text relative to buttons */
+  gap: 30px;           /* Space between buttons and text */
+  max-width: 1000px;   /* Increased to fit side-by-side content */
+  width: 100%;
+}
+
+/* Keeps the buttons stacked vertically */
+.bonus-buttons-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1; /* Takes up half the space */
+}
+
+/* Styles the text on the right */
+.bonus-side-text {
+  flex: 1; /* Takes up the other half */
+  color: white;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.bonus-side-text span {
+  font-weight: bold;
+}
+
+/* Responsive adjustment: stack them on mobile devices */
+@media (max-width: 768px) {
+  .bonus-content-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.bonus-footer-note {
+  padding: 2rem;
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+
+.deadline-text {
+  font-size: 1.4rem;
+  font-weight: 800; /* Very bold for the top line */
+  margin-bottom: 8px;
+  letter-spacing: -0.02em;
+}
+
+.guarantee-text {
+  font-size: 1.2rem;
+  font-weight: 400; /* Regular weight */
+  opacity: 0.9;     /* Slightly softer than the bold line */
+  line-height: 1.4;
+  margin-top: 0;
+}
+
+/* Optional: adjustment for mobile */
+@media (max-width: 600px) {
+  .deadline-text {
+    font-size: 1.1rem;
+  }
+  .guarantee-text {
+    font-size: 1rem;
+  }
 }
