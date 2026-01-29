@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-pt">
   <head>
     <meta charset="UTF-8" />
@@ -6,8 +6,43 @@
     <title>Desfralde Consciente</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="public/main-label.png" type="image/png">
-
+    <link rel="icon" href="public/main-label.png" type="image/png" />
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        'script',
+        'https://connect.facebook.net/en_US/fbevents.js',
+      );
+      fbq('init', '805060949221248');
+      fbq('track', 'PageView');
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=805060949221248&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
   </head>
   <body class="text-white">
     <nav class="flex justify-center gap-6 text-sm uppercase font-bold">
@@ -29,8 +64,8 @@
             width="80%"
           />
           <p id="main-text" class="text-lg mb-6">
-            O método eficaz para todas as crianças, incluindo aquelas no
-            espectro autista.
+            Método eficaz para todas as idades, incluindo aquelas com atrasos no
+            desenvolvimento.
           </p>
           <div class="flex gap-4 justify-center md:justify-start mb-6">
             <!-- Facebook -->
@@ -108,7 +143,15 @@
           src="https://www.youtube.com/embed/Qygpy3_604M?si=Q3HOoz4vU6VZ9oJf"
           title="YouTube video player"
           frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
           referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen
         ></iframe>
@@ -163,8 +206,8 @@
             segura no vaso.
           </li>
           <li>
-            Aplicar reforço e consequências positivas, promovendo comportamento
-            desejados naturalmente.
+            Aprender a utilizar reforço positivo estimulando o comportamento
+            alvo corretamente
           </li>
           <li>
             Orientação prática para o desfralde noturno, promovendo autonimia e
@@ -178,7 +221,7 @@
       class="bg-roxo-corpo py-20 px-6 flex flex-col items-center text-center"
     >
       <h2 class="text-4xl font-bold mb-10 italic">
-        Pronto para transformar o desfralde?
+        Pronto para um Desfralde Consciente?
       </h2>
       <div class="max-w-5xl flex flex-col md:flex-row items-center">
         <img src="public/teblet12.png" width="75%" />
@@ -191,7 +234,9 @@
           <button
             class="bg-white text-purple-700 font-bold px-10 py-3 rounded-full"
           >
-            <a href="https://pay.kiwify.com.br/SZRzUlF" target="_blank">SIM, QUERO O MÉTODO!</a>
+            <a href="https://pay.kiwify.com.br/SZRzUlF" target="_blank"
+              >Quero iniciar o desfralde hoje!</a
+            >
           </button>
         </div>
       </div>
@@ -199,7 +244,7 @@
 
     <section id="bonus" class="bg-indigo-900 py-16 text-center">
       <h3 class="text-3xl font-bold mb-10">
-        Aproveite agora e receba bónus exclusivos!
+        Aproveite agora e receba bônus exclusivos!
       </h3>
 
       <div class="table-img">
@@ -213,14 +258,46 @@
         <div class="bg-blue-400 p-4 rounded-lg w-64 italic font-bold">
           2. E-book reforço positivo
         </div>
-        <div class="bg-blue-400 p-4 rounded-lg w-64 italic font-bold">
+        <!-- <div class="bg-blue-400 p-4 rounded-lg w-64 italic font-bold">
           3. Preparando o desfralde fora de casa
+        </div> -->
+      </div>
+      <div class="session-diff">
+        <div class="title-diff">
+          <h2>
+            Você já tentou de tudo e ainda assim enfrenta dificuldades no
+            desfralde?
+          </h2>
+        </div>
+        <div class="text-diff">
+          Muitos obstáculos enfrentados no desfralde estão diretamente ligados à
+          falta de instruções claras e fundamentadas. Na Internet, encontramos
+          uma infinidade de dicas soltas, contraditórias e muitas vezes sem
+          qualquer respaldo científico. O ebook Desfralde Consciente foi criado
+          baseado na ciência da Análise Aplicada do Comportamento, para fornecer
+          uma abordagem eficaz para todas as faixas etárias, incluindo aquelas
+          com atrasos no desenvolvimento. Este é um método que garante
+          resultados rápidos, seguros e duradouros. Ao seguir nosso método, você
+          vai conquistar a sonhada liberdade das fraldas, reduzindo custos e
+          ajudando seu filho a conquistar autonomia no uso do banheiro.
+        </div>
+        <div class="footer-diff">
+          Adquira seu exemplar e comece hoje mesmo a preparar o seu filho para
+          essa grande conquista - com segurança, eficiência e sem traumas. O seu
+          sucesso no desfralde começa aqui!
         </div>
       </div>
+      <button class="btn-cta px-12 py-5 font-extrabold text-2xl uppercase">
+        <a href="https://pay.kiwify.com.br/SZRzUlF" target="_blank"
+          >Quero começar o desfralde hoje!</a
+        >
+      </button>
     </section>
 
     <section class="bonus-section">
-      <h2 class="text-4xl font-bold mb-10 italic">Mais uma vantagem exclusiva para quem garante o guia hoje!</h2>
+      <h2 class="text-4xl font-bold mb-10 italic">
+        Mais uma vantagem exclusiva para quem garante o guia hoje!
+      </h2>
       <div class="bonus-section-img">
         <img src="public/bonus1.png" alt="Bônus Extra" width="60%" />
         <div class="bonus-container-all">
@@ -460,12 +537,12 @@
           </p>
           <p class="footer-text">
             "Nosso método baseado em evidências foi desenvolvido para ajudar
-            pais e cuidadoresa a realizar o desfralde em casa com
+            pais e cuidadores a realizar o desfralde em casa com
             previsibilidade e segurança. Sabemos que em alguns casos,
             especialmente quando há atrasos no desenvolvimento, pode ser
             nescessário um apoio adicional. Para isso, contamos com uma equipe
             de analistas do comportamento prontos para criar uma estratégia
-            personalizada que atenda ás necessidades do seu aprendiz, oferecendo
+            personalizada que atenda às necessidades do seu aprendiz, oferecendo
             suporte individalizado online."
           </p>
         </div>
@@ -482,7 +559,7 @@
             <img src="public/phone.png" alt="phone" width="25%" />
             <div>
               <p>Para mais informações:</p>
-              <p class="font-bold">(11) 9 9596-0771</p>
+              <p class="font-bold">(81) 9 9596-0771</p>
             </div>
           </div>
         </div>
@@ -491,7 +568,9 @@
 
     <footer class="bg-indigo-950 py-10 text-center">
       <button class="btn-cta px-12 py-5 font-extrabold text-2xl uppercase">
-       <a href="https://pay.kiwify.com.br/SZRzUlF" target="_blank">Quero começar o desfralde hoje!</a>
+        <a href="https://pay.kiwify.com.br/SZRzUlF" target="_blank"
+          >Quero começar o desfralde hoje!</a
+        >
       </button>
       <p class="mt-10 text-xs opacity-50">
         © 2024 Desfralde Consciente - Todos os direitos reservados.
